@@ -1,0 +1,25 @@
+.archive-section {
+  margin-bottom: 80px;
+  margin-top: 24px;
+  @include media-breakpoint-down(xl) {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .static-section__content {
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .post h3 {
+    color: var(--color-dark);
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: all 0.3s;
+  }
+  .post {
+    text-decoration: none;
+  }
+  .post:hover h3 {
+    text-decoration-color: inherit;
+  }
+}

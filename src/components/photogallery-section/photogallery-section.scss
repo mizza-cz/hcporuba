@@ -1,0 +1,42 @@
+.photogallery-section {
+  margin-bottom: 80px;
+  margin-top: 24px;
+  @include media-breakpoint-down(xl) {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .static-section__content {
+    border-radius: 16px;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+  .topstory__item {
+    aspect-ratio: 460/460;
+    &::before {
+      z-index: 10;
+    }
+    &:hover {
+      img {
+        transform: scale(1.05);
+        z-index: -1;
+      }
+    }
+  }
+  img {
+    transition: all 0.3s;
+  }
+  .topstory__info {
+    z-index: 11;
+    padding-bottom: 24px;
+    padding-left: 8px;
+    padding-right: 8px;
+    .link {
+      margin-bottom: 16px;
+      padding: 4px 12px;
+    }
+    h3 {
+      color: var(--color-light);
+      transition: all 0.3s;
+    }
+  }
+}
