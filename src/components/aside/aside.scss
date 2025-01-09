@@ -6,7 +6,7 @@
   &-box {
     background-color: var(--color-blue-140);
     border-radius: 0 16px 0 0;
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
       border-radius: 16px 16px;
     }
     padding: 30px 32px;
@@ -28,7 +28,7 @@
     }
   }
   .o-content ul > li:before {
-    background-color: var(--color-yellow);
+    background-color: var(--color-red);
     border-radius: 0;
     top: 10px;
   }

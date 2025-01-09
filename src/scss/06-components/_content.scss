@@ -22,7 +22,7 @@
       content: "";
       width: 4px;
       height: 100%;
-      background-color: var(--color-blue-100);
+      background-color: var(--color-red);
       position: absolute;
       left: 0;
       top: 0;
@@ -39,7 +39,7 @@
       padding-left: 24px;
       &::before {
         content: "";
-        background-color: var(--color-blue-100);
+        background-color: var(--color-red);
         position: absolute;
         top: 8px;
         left: 0;
@@ -75,7 +75,7 @@
       padding-left: 24px;
       &::before {
         content: counter(item) ".";
-        color: var(--color-dark);
+        color: var(--color-red);
         font-weight: 400;
         position: absolute;
         top: 0;
