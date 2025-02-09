@@ -20,5 +20,14 @@ $(".js-scoreboard").slick({
         slidesToScroll: 1,
       },
     },
+    {
+      breakpoint: 720,
+      settings: {
+        dots: true,
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
   ],
 });

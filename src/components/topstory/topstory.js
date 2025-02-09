@@ -20,13 +20,17 @@ $(".topstory-slider").slick({
     {
       breakpoint: 720,
       settings: {
-        centerPadding: "50px",
+        centerPadding: "24px",
+        dots: true,
+        arrows: false,
       },
     },
     {
       breakpoint: 541,
       settings: {
-        centerPadding: "40px",
+        dots: true,
+        centerPadding: "0px",
+        arrows: false,
       },
     },
   ],

@@ -15,7 +15,6 @@
     padding: 6px 16px 8px;
     &:hover {
       color: var(--color-dark);
-      background-color: var(--color-yellow);
     }
   }
   &__img {
@@ -34,7 +33,7 @@
     }
   }
   &__date {
-    color: var(--color-blue-60);
+    color: var(--color-blue-140);
     margin-bottom: 12px;
     font-size: 14px;
     font-weight: 600;

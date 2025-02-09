@@ -230,6 +230,7 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: 8px;
+  cursor: pointer;
   @include media-breakpoint-down(sm) {
     padding: 0.25rem 12px;
   }
@@ -464,7 +465,6 @@
   @include media-breakpoint-down(xl) {
     display: block;
     position: absolute;
-    left: 12px;
     top: -6px;
     width: 80px;
     height: 80px;

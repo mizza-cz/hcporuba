@@ -7,6 +7,12 @@
   @include media-breakpoint-down(xl) {
     margin-top: 32px;
   }
+  &-slider {
+    @include media-breakpoint-down(md) {
+      padding-bottom: 32px;
+      position: relative;
+    }
+  }
   .slider__btn {
     border: none;
     outline: none;
@@ -135,5 +141,31 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  left: 0;
+  right: 0;
+  gap: 6px;
+  bottom: 0;
+  .slick-active button {
+    background-color: var(--color-blue-100);
+  }
+  button {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-blue-100);
+    outline: none;
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    cursor: pointer;
   }
 }

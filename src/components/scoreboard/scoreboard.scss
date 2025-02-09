@@ -1,6 +1,15 @@
 .scoreboard {
   margin-bottom: 32px;
   padding: 0 20px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 32px;
+    padding-right: 0;
+    position: relative;
+    padding-left: 0;
+  }
+  .slick-dots {
+    bottom: -32px;
+  }
   .slider__btn {
     border: none;
     outline: none;
