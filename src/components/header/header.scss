@@ -136,7 +136,7 @@
         right: 0;
         z-index: 99;
         width: 100%;
-        padding: 1rem 0;
+        padding: 2rem 0 1rem;
         opacity: 0;
         visibility: hidden;
         flex-direction: column;
@@ -313,6 +313,9 @@
     border: 1px solid rgba(0, 0, 0, 0.15);
     overflow: hidden;
     box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.05);
+    @include media-breakpoint-down(xl) {
+      background-color: var(--color-blue-180);
+    }
     li {
       &:last-child {
         .dropdown-item::before {
@@ -427,7 +430,7 @@
   font-size: 14px;
   font-weight: 600;
   color: var(--color-light);
-
+  text-transform: uppercase;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 12px;
@@ -450,8 +453,8 @@
   display: none;
   margin: 0 auto;
   position: relative;
-  width: 124px;
-  height: 124px;
+  width: 164px;
+  height: 164px;
   z-index: 999;
   transition: all 0.3s;
   &:hover {
@@ -465,19 +468,22 @@
   @include media-breakpoint-down(xl) {
     display: block;
     position: absolute;
-    top: -6px;
-    width: 80px;
-    height: 80px;
+    top: -32px;
+    width: 124px;
+    height: 124px;
   }
 }
 .navbar-nav__logo {
   position: absolute;
-  width: 124px;
-  height: 124px;
-  top: 16px;
+  width: 164px;
+  height: 164px;
+  top: -16px;
   left: 0;
   right: 0;
   margin: 0 auto;
+  @include media-breakpoint-down(xl) {
+    display: none;
+  }
   .header__logo {
     display: block;
     @include media-breakpoint-down(xl) {
