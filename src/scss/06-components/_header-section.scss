@@ -5,10 +5,22 @@
 
   @include media-breakpoint-down(lg) {
     border-radius: 16px 16px 0 0;
-    adding-top: 2.5rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
     padding-bottom: 2rem;
+  }
+  @include media-breakpoint-only(md) {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include media-breakpoint-only(sm) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 32px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
   }
   &__filter {
     display: flex;

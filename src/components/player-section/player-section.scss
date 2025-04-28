@@ -1,4 +1,7 @@
 .player-section {
+  td {
+    white-space: nowrap;
+  }
   &__top {
     position: relative;
   }
