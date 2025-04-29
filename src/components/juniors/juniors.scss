@@ -1,4 +1,6 @@
 .juniors {
+  margin-bottom: 48px;
+
   .nav-tabs {
     @include media-breakpoint-down(lg) {
       width: 100%;

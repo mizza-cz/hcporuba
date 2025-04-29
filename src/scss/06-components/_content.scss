@@ -20,6 +20,10 @@
       margin-top: 28px;
     }
   }
+  h4 {
+    margin-top: 24px;
+    padding-bottom: 16px;
+  }
   q {
     display: block;
     position: relative;
@@ -118,6 +122,17 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 32px;
+  }
+  p a {
+    display: block;
+  }
+  p {
+    a + a {
+      margin-top: 4px;
+    }
+  }
+  table {
     margin-bottom: 32px;
   }
   img {

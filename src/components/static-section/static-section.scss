@@ -111,3 +111,32 @@
     border-bottom: none;
   }
 }
+
+table.about-table {
+  tr {
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  td img {
+    width: 144px;
+    height: 144px;
+    object-fit: contain;
+    margin: 0;
+  }
+  td {
+    background: var(--color-light) !important;
+  }
+  .item {
+    background: var(--color-blue-5) !important;
+    width: 30%;
+    min-width: 30%;
+    font-weight: 700;
+
+    @include media-breakpoint-down(md) {
+      white-space: normal;
+      width: 100%;
+    }
+  }
+}

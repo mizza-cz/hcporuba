@@ -15,4 +15,13 @@
 .m-05 {
   margin: 0 4px;
 }
+.text-primary {
+  color: var(--color-red) !important;
+}
+.text-blue-100 {
+  color: var(--color-blue-100);
+}
+.fw-medium {
+  font-weight: 500;
+}
 /*! purgecss end ignore */
