@@ -115,7 +115,7 @@
     margin-bottom: 0;
   }
   h3 {
-    margin-top: 39px;
+    margin-top: 40px;
     margin-bottom: 13px;
   }
   p {
@@ -136,10 +136,10 @@
     margin-bottom: 32px;
   }
   img {
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     height: auto;
-    object-fit: cover;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     border-radius: 4px;
   }
 }
@@ -200,9 +200,6 @@
 }
 .img-content {
   width: auto !important;
-  padding-right: 32px;
-  float: left;
-  aspect-ratio: 448/279 !important;
   @include media-breakpoint-down(lg) {
     float: none;
     max-width: 100%;
