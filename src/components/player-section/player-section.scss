@@ -4,6 +4,7 @@
   }
   &__top {
     position: relative;
+    background-color: var(--color-blue-160);
   }
   &__info-list {
     display: flex;
@@ -93,7 +94,9 @@
     background-image: url("../images/ico/lev.svg");
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 505px 418px;
+    background-size: contain;
+    min-height: 358px;
+
     @include media-breakpoint-down(xl) {
       background-size: contain;
       padding-top: 48px;
