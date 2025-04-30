@@ -1,6 +1,7 @@
 .topstory {
   margin: 0 auto 32px;
   position: relative;
+
   &-imgContainer {
     display: block;
     height: 100%;
@@ -66,13 +67,62 @@
   }
   .slick-list {
     overflow: visible;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 8px);
+      background-color: var(--color-red);
+      opacity: 0.6;
+      filter: blur(5px);
+      z-index: 5;
+      top: -4px;
+    }
+    &::before {
+      left: calc(-100% + 126px);
+      @include media-breakpoint-only(xl) {
+        left: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(lg) {
+        left: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(md) {
+        left: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(sm) {
+        left: calc(-100% + 24px);
+      }
+      @include media-breakpoint-down(sm) {
+        left: -100%;
+      }
+    }
+    &::after {
+      right: calc(-100% + 126px);
+      @include media-breakpoint-only(xl) {
+        right: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(lg) {
+        right: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(md) {
+        right: calc(-100% + 60px);
+      }
+      @include media-breakpoint-only(sm) {
+        right: calc(-100% + 24px);
+      }
+      @include media-breakpoint-down(sm) {
+        right: -100%;
+      }
+    }
   }
   .slick-center.slick-slide {
     opacity: 1;
+    z-index: 9999;
   }
   .slick-slide {
-    opacity: 0.2;
     padding-left: 8px;
+    position: relative;
     padding-right: 8px;
   }
   &__descr {
