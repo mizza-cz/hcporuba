@@ -6,6 +6,10 @@
   max-width: 100%;
   border-collapse: collapse;
   margin: 0;
+  td,
+  th {
+    vertical-align: middle;
+  }
   a {
     text-decoration-color: transparent;
     white-space: nowrap;

@@ -5,6 +5,9 @@
   &__top {
     position: relative;
     background-color: var(--color-blue-160);
+    @include media-breakpoint-down(xl) {
+      padding-top: 32px;
+    }
   }
   &__info-list {
     display: flex;
@@ -72,6 +75,7 @@
     overflow: hidden;
     @include media-breakpoint-down(xl) {
       border-radius: 16px 16px 0 0;
+      aspect-ratio: 710/440;
     }
     img {
       width: 100%;
