@@ -8,9 +8,9 @@ input {
   font-weight: 500;
   border-radius: 4px;
   &::placeholder {
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: var(--color-dark);
-    font-weight: 700;
+    font-weight: 500;
   }
   &:target,
   &:active,

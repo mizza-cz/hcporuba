@@ -384,13 +384,10 @@
 }
 @media all and (min-width: 992px) {
   .navbar .nav-item .dropdown-menu {
-    display: none;
-    &.show {
-      display: block;
-    }
+    display: none !important;
   }
   .nav-item:hover .dropdown-menu {
-    display: block;
+    display: block !important;
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
