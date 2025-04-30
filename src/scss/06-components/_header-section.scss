@@ -56,7 +56,7 @@
     flex-wrap: wrap;
     display: flex;
     align-items: center;
-
+    gap: 16px 0;
     @include media-breakpoint-down(xxl) {
       margin-left: 0;
       width: 100%;
@@ -71,9 +71,9 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    @include media-breakpoint-down(xxl) {
-      flex-wrap: wrap;
-    }
+    gap: 24px;
+    justify-content: space-between;
+
     @include media-breakpoint-down(lg) {
       align-items: start;
     }
@@ -85,9 +85,7 @@
   &__label {
     display: block;
     margin-right: 16px;
-    @include media-breakpoint-down(xxl) {
-      margin-top: 16px;
-    }
+
     @include media-breakpoint-down(md) {
       width: 100%;
       margin-right: 0;
@@ -96,6 +94,7 @@
   form {
     display: flex;
     align-items: center;
+    gap: 16px 0;
     @include media-breakpoint-down(md) {
       width: 100%;
     }
@@ -106,9 +105,7 @@
     input {
       width: 280px;
       margin-right: 16px;
-      @include media-breakpoint-down(xxl) {
-        margin-top: 16px;
-      }
+
       @include media-breakpoint-down(md) {
         margin-left: 0;
         width: 100%;
@@ -121,9 +118,7 @@
 
   .link {
     height: 42px;
-    @include media-breakpoint-down(xxl) {
-      margin-top: 16px;
-    }
+
     @include media-breakpoint-down(sm) {
       width: 100%;
     }
