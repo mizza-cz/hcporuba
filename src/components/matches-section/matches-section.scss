@@ -84,3 +84,9 @@
     }
   }
 }
+a.matches-section__score {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
