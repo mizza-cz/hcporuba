@@ -4,6 +4,9 @@
     padding-bottom: 5rem;
     border-radius: 1rem 0 0 1rem;
     color: var(--color-dark);
+    @include media-breakpoint-down(xl) {
+      border-radius: 1rem;
+    }
   }
   &__row {
     text-align: center;
